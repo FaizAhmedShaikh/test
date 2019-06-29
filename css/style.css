@@ -180,6 +180,8 @@ section{ padding:80px 0 ;}
 .redbg{background:#E81C1C}
 .graybg{background:#C4C3C3;}
 
+.gray-full-bg{background:#F4F6F8;}
+
 /*-- Header --*/
 .heading-top-section{padding:15px 0; border-bottom:1px solid #E6E8EB;}
 
@@ -229,7 +231,6 @@ nav li a.active:after{content: "";position: absolute;bottom: -8px;left: 0;backgr
 
 
 /*-- DSA Certificate --*/
-.dsa-cert-section{background:#F4F6F8;}
 .dsa-cert-section p{font-size:20px;color:#2F2F2F;}
 /*-- DSA Certificate --*/
 
@@ -263,6 +264,36 @@ nav li a.active:after{content: "";position: absolute;bottom: -8px;left: 0;backgr
 
 
 /*-- Testimonial --*/
+.item{max-width:752px;width:100%; margin:0 auto; background:#ffffff;padding:60px;position:relative
+      ;-webkit-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.35);-moz-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.35);box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.35); }
+.item:before{content: "";position: absolute;top: 0;left: 0;background: #F7F7F7;height: 100%;width: 145px;}
+.inner-item{position:relative}
+.profile-img{float:left; position: relative;top: -80px;}
+.content{margin-left: 140px;}
+.content > p{font-size: 20px;position:relative}
+.content > p:before{content: "";position: absolute;top: -5px;left: -30px;background: url(../images/quotes.png);height: 15px;width: 20px;}
+.details .name {border-bottom: 1px solid #1A1A1A;padding-bottom: 20px;margin-bottom: 20px;}
+.details .name h4{font-family: UbuntuBold;font-size: 20px;margin-top: 40px;color: #2F2F2F;}
+.details .name p {font-family: UbuntuLight;padding: 0 0 2px 0;font-size: 20px;color: #2F2F2F;}
+.details{margin-top:40px}
+.descp-section{padding-left: 143px;}
+.cert-name {font-size: 20px;color: #4E4D4D;font-family: UbuntuLight;font-style:italic;}
+
+.cert-name p{float:left;}
+.cert-name .circle-section{float:right; margin-top:-3px;}
+
+.slider{position:relative;}
+.carousel-inner{position:relative;}
+.left-arrow.control {left: 30px;}
+.right-arrow.control {right: 30px;}
+.control {position: absolute;top: 0;bottom: 0;margin: auto;width: 35px;height: 58px;}
+.slide1{    left: 0;position: absolute;top: 90px;text-align:left}
+.slide3{right: 0;position: absolute;top: 90px;text-align:right;}
+.slide1 img, .slide3 img{width: 75%;}
+/*-- Testimonial --*/
+
+
+/*-- Users --*/
 .student-list li {border: 1px solid #CBCBCB;width: 22%;padding: 30px;position: relative;float: left;margin-right: 4%;}
 .student-list li:hover{-webkit-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.35);-moz-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.35);box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.35);}
 .student-list li:nth-child(4n) {margin: 0;}
@@ -272,7 +303,7 @@ nav li a.active:after{content: "";position: absolute;bottom: -8px;left: 0;backgr
 .name-section h4{padding-bottom:10px; font-family:ArialBold;font-size:16px;margin-top:50px;color:#4E4D4D;}
 .name-section p{font-family:RobotoRegular;padding:0 0 2px 0; font-size:14px;color:#4E4D4D; }
 .cert-type{font-size:16px;color:#4E4D4D;font-family:ArialRegular;}
-/*-- Testimonial --*/
+/*-- Users --*/
 
 
 /*-- footer --*/
@@ -332,7 +363,7 @@ footer{background:#f2f2f2;}
     .mocktest .title{display:none;}
     .cource-price{margin-top:50px;}
     .cource-price::before{top: -37px;left: -2px;-moz-transform: rotate(161deg);-o-transform: rotate(161deg);-webkit-transform: rotate(161deg);-ms-transform: rotate(161deg);transform: rotate(161deg);}
-    .oneliner-text{ display:none;}
+    /*.oneliner-text{ display:none;}*/
 
     .footer-link span {display: block;vertical-align: middle;width: auto;text-align: center;}
     .footer-link nav{display: block;margin-left: 0;text-align: center;float:none;}
@@ -345,7 +376,18 @@ footer{background:#f2f2f2;}
     .payment-method {float: none;text-align: center; margin-top:50px;}
     .payment-method label{padding-right: 0; margin-bottom:15px;}
     .ccdsa-section + .ccdsa-section {margin-top: 50px;}
-    
+
+    .item{padding: 20px;max-width:500px}
+    .item::before{width:80px;}
+    .content{margin-left: 70px;}
+    .content > p::before{top:3px;}
+    .content > p{font-size: 16px;}
+    .slide1, .slide3{display:none;}
+    .details{margin-top: 50px;}
+    .profile-img{top: 0;}
+    .cert-name p{font-size: 16px;}
+    .details .name h4{font-size:16px;margin-top: 0px;}
+    .details .name p{font-size:16px;    }
 }
 @media only screen and (min-width:320px) and (max-width:575px) {
     .date-section li:last-child{margin-top:20px;}
@@ -416,6 +458,8 @@ footer{background:#f2f2f2;}
     .footer-link{padding:30px 0;}
     .codechef-menu{float:none;}
     .payment-method{margin-top: 30px;float: none;}
+
+     .slide1, .slide3{display:none;}
 }
 
 @media only screen and (min-width:992px) and (max-width:1199px) {
@@ -423,6 +467,14 @@ footer{background:#f2f2f2;}
      .container-inner{max-width:960px}
       .codechef-menu{float:none;}
      .payment-method{margin-top: 30px;float: none;}
+     .item{max-width:600px}
+     .slide1{left:-50px}
+     .left-arrow.control {
+    left: 100px;
+}
+     .right-arrow.control {
+    right: 100px;
+}
 }
 @media only screen and (min-width:1200px) and (max-width:1300px) {
     .footer-link nav{margin-left: 40px;}
