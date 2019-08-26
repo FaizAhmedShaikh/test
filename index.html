@@ -16,7 +16,7 @@
 
     <script src="js/custom.js" type="text/javascript"></script>
     <link href="css/style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">-->
 </head>
 <body>
     <div class="wrapper">
@@ -24,13 +24,15 @@
             <div class="heading-top-section">
                 <div class="container clearfix">
                     <div class="contact-section">
-                        <a href="mailto:ccdsap@codechef.com">
-                            <i class="icon-emailicon"></i>
+                        <a href="mailto:ccdsap@codechef.com" class="email">
+                            <!--<i class="icon-emailicon"></i>-->
+                            <img src="images/MailIcon.png" alt="MailIcon" />
                             <span>ccdsap@codechef.com</span>
                         </a>
 
-                        <a href="callto:9320060499">
-                            <i class="icon-phone"></i>
+                        <a href="callto:9320060499" class="phonenumber">
+                            <!--<i class="icon-phone"></i>-->
+                            <img src="images/PhoneIcon.png" alt="PhoneIcon" />
                             <span>+91 93200 60499</span>
                         </a>
                     </div>
@@ -43,7 +45,8 @@
             <div class="heading-nav-section">
                 <div class="container clearfix">
                     <div class="logo">
-                        <img src="images/logo.png" alt="Logo" />
+                        <img src="images/logo.png" alt="Logo" class="desktop-logo" />
+                        <img src="images/mobile-logo.png" alt="Logo" class="mobile-logo" />
                     </div>
                     <nav>
                         <ul>
@@ -60,9 +63,9 @@
         <section class="banner">
             <div class="container">
                 <div class="banner-text fadeIn animated">
-                    <h1>India’s only industry-ready certification in DSA</h1>
+                    <h1>India’s only industry-ready certification in <span>DSA</span></h1>
                     <article>Certify yourself with Codechef’s Multi-Level Assessment in Data Structure & Algorithms & get globally recognized.</article>
-                    <button class="enroll-now-btn">Enroll Now</button>
+                    <button class="enroll-now-btn">Enrol Now</button>
                     <img class="chef-icon" src="images/Chef@2x.png" alt="chef">
                 </div>
             </div>
@@ -76,7 +79,7 @@
                     </li>
                     <li>
                         <label>Last Date of Registration</label>
-                        <span>19 Mar 2019</span>
+                        <span>18 Mar 2019</span>
                     </li>
                 </ul>
             </div>
@@ -93,75 +96,75 @@
         <section class="level-section">
             <div class="container">
                 <h2 class="heading">Levels</h2>
-                    <ul class="tab">
-                        <li>
-                            <a href="javascript:void(0)" class="tablinks active" onclick="openCity(event, 'Foundation')">Foundation</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)" class="tablinks " onclick="openCity(event, 'Advanced')">Advanced</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Expert')">Expert</a>
-                        </li>
-                        
-                        
-                        
-                    </ul>
+                <ul class="tab">
+                    <li>
+                        <a href="javascript:void(0)" class="tablinks active" onclick="openCity(event, 'Foundation')">Foundation</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="tablinks " onclick="openCity(event, 'Advanced')">Advanced</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Expert')">Expert</a>
+                    </li>
 
-                    <div id="Foundation" class="tabcontent in">
-                        <article>This will certify that the person is fluent with the basics of algorithms and data structures and can implement them in code.</article>
-                        <div class="level-detail-section">
-                            <ul>
-                                <li>
-                                    <aside class="title">Free Resources to Prepare</aside>
-                                    <aside class="descp">
-                                        <p>Get the entire syllabus, which is accompanied with resources on each topic with practice problems.</p>
-                                        <a href="#">Syllabus & Resources</a>
-                                    </aside>
-                                </li>
-                                <li class="mocktest">
-                                    <aside class="title"></aside>
-                                    <aside class="descp">
-                                        <p>Once ready, give mock to test yourself.</p>
-                                        <a href="#">Mock Test</a>
-                                    </aside>
-                                </li>
-                                <li class="cource-section">
-                                    <aside class="title">Course Price</aside>
-                                    <aside class="descp">
-                                        <div class="cource-price">
-                                            <p class="prev-price">Rs. 3500/-</p>
-                                            <p>
-                                                <span><b>Rs. 2500/-</b></span>
-                                                <span> Discounted price</span>
-                                            </p>
-                                            <p>
-                                                <span>Avail between</span>
-                                                <span> 25 Sept - 21 Oct </span>
-                                            </p>
-                                        </div>
 
-                                    </aside>
-                                </li>
-                                <li>
-                                    <aside class="title"></aside>
-                                    <aside class="descp">
-                                        <button class="enroll-now-btn">Enroll Now</button>
-                                    </aside>
-                                </li>
-                            </ul>
-                        </div>
+
+                </ul>
+
+                <div id="Foundation" class="tabcontent in">
+                    <article>This will certify that the person is fluent with the basics of algorithms and data structures and can implement them in code.</article>
+                    <div class="level-detail-section">
+                        <ul>
+                            <li>
+                                <aside class="title">Free Resources to Prepare</aside>
+                                <aside class="descp entire-syllabus">
+                                    <p>Get the entire syllabus, which is accompanied with resources on each topic with practice problems.</p>
+                                    <a href="#">Syllabus & Resources</a>
+                                </aside>
+                            </li>
+                            <li class="mocktest">
+                                <aside class="title"></aside>
+                                <aside class="descp mock-text">
+                                    <p>Once ready, give mock to test.</p>
+                                    <a href="#">Mock Test</a>
+                                </aside>
+                            </li>
+                            <li class="cource-section">
+                                <aside class="title cource-price-text">Course Price</aside>
+                                <aside class="descp">
+                                    <div class="cource-price">
+                                        <p class="prev-price">Rs. 3,500/-</p>
+                                        <p>
+                                            <span>Rs.2,500/-</span>
+                                            <span class="disc-price"> Discounted price</span>
+                                        </p>
+                                        <p>
+                                            <span>Avail between</span>
+                                            <span> 25 Sept - 21 Oct </span>
+                                        </p>
+                                    </div>
+
+                                </aside>
+                            </li>
+                            <li>
+                                <aside class="title"></aside>
+                                <aside class="descp">
+                                    <button class="enroll-now-btn">Enrol Now</button>
+                                </aside>
+                            </li>
+                        </ul>
                     </div>
+                </div>
 
-                    <div id="Advanced" class="tabcontent">
-                        <h3>Paris</h3>
-                        <p>Paris is the capital of France.</p>
-                    </div>
+                <div id="Advanced" class="tabcontent">
+                    <h3>Paris</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
 
-                    <div id="Expert" class="tabcontent">
-                        <h3>Tokyo</h3>
-                        <p>Tokyo is the capital of Japan.</p>
-                    </div>
+                <div id="Expert" class="tabcontent">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
             </div>
         </section>
         <section class="testimonial gray-full-bg">
@@ -172,57 +175,57 @@
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry
                 </h4>
             </div>
-                <div class="slider">
-                    <div class="slide1">
-                        <img src="images/slide1.png" alt="Slider 1" />
-                    </div>
-                    <div class="slide3">
-                        <img src="images/slide3.png" alt="Slider 3" />
-                    </div>
-                    <div class="container carousel-inner">
-                        <div class="item">
-                            <div class="inner-item clearfix">
-                                <div class="content">
-                                    <p>CCDSAP gave my talent and hard work the opportunity to interview with the top tech companies in India. CCDSAP gave my talent and hard work the opportunity to with the top tech companies in India.</p>
-                                    
-                                </div>
-                                <div class="details">
-                                    
-                                    <div class="descp-section">
-                                        <div class="name">
-                                            <h4>Amit Jha</h4>
-                                            <p>Software Engineer, Sharechat</p>
-                                        </div>
-                                        <div class="cert-name">
-                                            <p>Foundation Certified </p>
-                                            <p class="circle-section">
-                                                <span class="circle bluebg"></span>
-                                                <span class="circle graybg"></span>
-                                                <span class="circle graybg"></span>
-                                                <span class="circle graybg"></span>
-                                            </p>
-                                        </div>
+            <div class="slider">
+                <div class="slide1">
+                    <img src="images/slide1.png" alt="Slider 1" />
+                </div>
+                <div class="slide3">
+                    <img src="images/slide3.png" alt="Slider 3" />
+                </div>
+                <div class="container carousel-inner">
+                    <div class="item">
+                        <div class="inner-item clearfix">
+                            <div class="content">
+                                <p>CCDSAP gave my talent and hard work the opportunity to interview with the top tech companies in India. CCDSAP gave my talent and hard work the opportunity to with the top tech companies in India.</p>
+
+                            </div>
+                            <div class="details">
+
+                                <div class="descp-section">
+                                    <div class="name">
+                                        <h4>Amit Jha</h4>
+                                        <p>Software Engineer, Sharechat</p>
+                                    </div>
+                                    <div class="cert-name">
+                                        <p>Foundation Certified </p>
+                                        <p class="circle-section">
+                                            <span class="circle bluebg"></span>
+                                            <span class="circle graybg"></span>
+                                            <span class="circle graybg"></span>
+                                            <span class="circle graybg"></span>
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="profile-img">
-                                    <img src="images/amitjha.png" alt="Profile Image" />
-                                </div>
+                            </div>
+                            <div class="profile-img">
+                                <img src="images/amitjha.png" alt="Profile Image" />
                             </div>
                         </div>
-                        <div>
-                            <a href="#" class="left-arrow control">
-                                <img src="images/leftarrow.png" alt="Left Arrow" class="desk"/>
-                                <img src="images/mobleftarrow.png" alt="Left Arrow" class="mob"/>
-                            </a>
-                            <a href="#" class="right-arrow control">
-                                <img src="images/rightarrow.png" alt="Right Arrow" class="desk" />
-                                <img src="images/mobrightarrow.png" alt="Right Arrow" class="mob" />
-                            </a>
-                        </div>
                     </div>
-                    
+                    <div>
+                        <a href="#" class="left-arrow control">
+                            <img src="images/leftarrow.png" alt="Left Arrow" class="desk" />
+                            <img src="images/mobleftarrow.png" alt="Left Arrow" class="mob" />
+                        </a>
+                        <a href="#" class="right-arrow control">
+                            <img src="images/rightarrow.png" alt="Right Arrow" class="desk" />
+                            <img src="images/mobrightarrow.png" alt="Right Arrow" class="mob" />
+                        </a>
+                    </div>
                 </div>
-            
+
+            </div>
+
 
         </section>
         <section class="cert-user-section">
@@ -231,7 +234,7 @@
                 <h4 class="oneliner-text">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry
                 </h4>
-                <ul class="student-list clearfix">
+                <ul class="student-list desktop clearfix">
                     <li>
                         <img src="images/neha.png" />
                         <div class="name-section">
@@ -359,7 +362,7 @@
                             <p>Sharechat</p>
                         </div>
                         <div class="cert-type">
-                            <p>Advanced Certified</p>
+                            <p>Foundation Certified</p>
                             <p>
                                 <span class="circle bluebg"></span>
                                 <span class="circle graybg"></span>
@@ -369,16 +372,33 @@
                         </div>
                     </li>
                 </ul>
+                
             </div>
         </section>
         <footer>
             <div class="social-media">
                 <h5>Follow us</h5>
                 <ul>
-                    <li><a href="#"><i class="icon-facebook"></i></a></li>
-                    <li><a href="#"><i class="icon-twitter"></i></a></li>
-                    <li><a href="#"><i class="icon-google-1"></i></a></li>
-                    <li><a href="#"><i class="icon-instegram"></i></a></li>
+                    <li>
+                        <a href="#">
+                            <img src="images/facebook@2x.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/twitter@2x.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/google +@2x.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/instegram@2x.png" />
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="footer-link">
@@ -389,8 +409,8 @@
                             <ul>
                                 <li><a href="#" class="active">Home</a></li>
                                 <li><a href="#">About</a></li>
-                                <li><a href="#">Levels</a></li>
-                                <li><a href="#">Details</a></li>
+                                <li><a href="#">Level</a></li>
+                                <li><a href="#">Detail</a></li>
                                 <li><a href="#">Help</a></li>
                             </ul>
                         </nav>
@@ -405,7 +425,7 @@
                                     <li><a href="#">Compete</a></li>
                                     <li><a href="#">Discuss</a></li>
                                     <li><a href="#">Collaborate</a></li>
-                                    <li><a href="#">Initatives</a></li>
+                                    <li><a href="#">Initiatives</a></li>
                                     <li><a href="#">Community</a></li>
                                 </ul>
                             </nav>
