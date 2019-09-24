@@ -1669,8 +1669,16 @@ footer {
 @media only screen and (min-width:320px) and (max-width:767px) {
     .container {
         padding: 0 15px;
-        max-width: 360px !important;
+        
     }
+    .banner .container,
+    .date-section .container,
+    .dsa-cert-section .container,
+    .level-section .container,
+    .testimonial .container,
+    .cert-user-section .container{max-width: 360px;}
+
+
     .date-section li label {
         font-size: 13px
     }
